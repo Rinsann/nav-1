@@ -8,7 +8,7 @@ const hashMap = xObject || [
     {logo: 'B', url: 'https://www.baidu.com'},
     {logo: 'G', url: 'https://www.google.com'},
     {logo: 'V', url: 'https://www.v2ex.com'},
-    // {logo: 'N', url: 'http://47.101.150.38/'},
+    {logo: 'N', url: 'http://47.101.150.38/'},
     {logo: 'V', url: 'https://cn.vuejs.org/'},
     {logo: 'R', url: 'https://zh-hans.reactjs.org/'},
     {logo: 'S', url: 'https://spring.io/'},
