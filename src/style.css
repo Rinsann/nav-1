@@ -29,6 +29,9 @@ img {
 /* style */
 body {
     background: #eee;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 1px;
 }
 
 .globalHeader {

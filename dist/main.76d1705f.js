@@ -158,4 +158,4 @@ $(document).on('keypress', function (e) {
     }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=https://centaurusr.github.io/nav-1/dist/main.76d1705f.map
+//# sourceMappingURL=main.76d1705f.map
