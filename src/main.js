@@ -45,9 +45,8 @@ $('.addButton').on('click', () => {
     if (url.indexOf('http') !== 0) {
         url = 'https://www.' + url
     }
-    console.log(simplifyUrl(url))
     hashMap.push({
-        logo: simplifyUrl(url[0].toUpperCase()),
+        logo: simplifyUrl(url)[0].toUpperCase(),
         url: url
     });
     render();
@@ -55,7 +54,7 @@ $('.addButton').on('click', () => {
 
 window.onbeforeunload = () => {
     const string = JSON.stringify(hashMap)
-    window.localStorage.setItem('x', string)
+    localStorage.setItem('x', string)
 }
 
 $(document).on('keypress',(e)=>{

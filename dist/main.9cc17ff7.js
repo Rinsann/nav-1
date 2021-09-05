@@ -135,9 +135,8 @@ $('.addButton').on('click', function () {
     if (url.indexOf('http') !== 0) {
         url = 'https://www.' + url;
     }
-    console.log(simplifyUrl(url));
     hashMap.push({
-        logo: simplifyUrl(url[0].toUpperCase()),
+        logo: simplifyUrl(url)[0].toUpperCase(),
         url: url
     });
     render();
@@ -145,7 +144,7 @@ $('.addButton').on('click', function () {
 
 window.onbeforeunload = function () {
     var string = JSON.stringify(hashMap);
-    window.localStorage.setItem('x', string);
+    localStorage.setItem('x', string);
 };
 
 $(document).on('keypress', function (e) {
@@ -158,4 +157,4 @@ $(document).on('keypress', function (e) {
     }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.76d1705f.map
+//# sourceMappingURL=main.9cc17ff7.map

@@ -29,9 +29,11 @@ img {
 /* style */
 body {
     background: #eee;
-    min-width: 100vw;
-    min-height: 100vh;
     padding: 1px;
+    background: url("images/wallhaven-281d5y.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #ccc;
 }
 
 .globalHeader {
