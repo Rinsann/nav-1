@@ -24,7 +24,7 @@ const simplifyUrl = (url) => {
 
 const render = () => {
     $siteList.find('li:not(.last)').remove()
-    hashMap.forEach((node,index) => {
+    hashMap.forEach((node, index) => {
         const $li = $(`<li>
                 <div class="site">
                     <div class="logo">${node.logo}</div>
@@ -41,7 +41,7 @@ const render = () => {
         })
         $li.on('click', '.close', (e) => {
             e.stopPropagation()  //阻止冒泡
-            hashMap.splice(index,1)
+            hashMap.splice(index, 1)
             render()
         })
     });
@@ -65,12 +65,12 @@ window.onbeforeunload = () => {
     localStorage.setItem('x', string)
 }
 
-$(document).on('keypress',(e)=>{
-    const {key} = e
-    for (let i=0;i<hashMap.length;i++){
-        if (hashMap[i].logo.toLowerCase() === key){
-            window.open(hashMap[i].url)
-        }
-    }
-})
+// $(document).on('keypress', (e) => {
+//     const {key} = e
+//     for (let i = 0; i < hashMap.length; i++) {
+//         if (hashMap[i].logo.toLowerCase() === key) {
+//             window.open(hashMap[i].url)
+//         }
+//     }
+// })
 
