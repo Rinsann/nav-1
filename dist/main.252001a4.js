@@ -108,7 +108,9 @@ var $siteList = $('.siteList');
 var $lastLi = $siteList.find('li.last');
 var x = localStorage.getItem('x');
 var xObject = JSON.parse(x);
-var hashMap = xObject || [{ logo: 'A', url: 'https://www.acfun.cn' }, { logo: 'B', url: 'https://www.bilibili.com' }];
+var hashMap = xObject || [{ logo: 'A', url: 'https://www.acfun.cn' }, { logo: 'B', url: 'https://www.bilibili.com' }, { logo: 'B', url: 'https://www.baidu.com' }, { logo: 'G', url: 'https://www.google.com' }, { logo: 'V', url: 'https://www.v2ex.com' },
+// {logo: 'N', url: 'http://47.101.150.38/'},
+{ logo: 'V', url: 'https://cn.vuejs.org/' }, { logo: 'R', url: 'https://zh-hans.reactjs.org/' }, { logo: 'S', url: 'https://spring.io/' }, { logo: 'D', url: 'https://www.djangoproject.com/' }];
 
 var simplifyUrl = function simplifyUrl(url) {
     return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, ''); //删除 / 开头的内容
@@ -157,4 +159,4 @@ $(document).on('keypress', function (e) {
     }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.9cc17ff7.map
+//# sourceMappingURL=main.252001a4.map
